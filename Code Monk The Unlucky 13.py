@@ -26,7 +26,8 @@ def number_of_strings(n):
 This is O(n) solution which cause time limit exceeded issue 
 """
 # Write your code here
-""" this is O(log[n]) solution but currently it is crashing and hackerearth is not accepting it, probably because the dict cache is taking large memory and running in OOO memory"""
+""" this is O(log[n]) solution but currently it is crashing and hackerearth is not accepting it, because the function is causing RecursionError : maximum recursion depth exceeded in comparison
+"""
 def ans(n):
     if (n in cache):
         return (cache[n])
